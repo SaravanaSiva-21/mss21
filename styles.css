@@ -138,25 +138,51 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 700px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
     header, main {
-        width: 98%;
+        width: 100%;
+        margin: 0;
+        padding: 0 4vw;
+        box-sizing: border-box;
     }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 14px;
+        padding: 10px 6vw;
+        width: 100%;
+        gap: 14px;
+    }
+    .logo-area {
+        align-items: flex-start;
+        width: 100%;
     }
     .team-name {
-        font-size: 1.3em;
-        margin-bottom: 9px;
+        font-size: 1.2em;
+        margin-bottom: 7px;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+        align-items: flex-start;
     }
     nav a {
-        margin: 8px 6px;
-        padding: 4px 8px;
+        margin: 4px 0;
+        padding: 6px 8px;
         font-size: 1em;
+        width: 100%;
+        display: block;
     }
     .logo {
-        max-width: 120px;
+        max-width: 100px;
+    }
+    .feedback-table {
+        width: 100%;
+        border-spacing: 2px 5px;
+        font-size: 0.97em;
     }
 }
 
@@ -184,4 +210,5 @@ footer {
         font-size: 0.95em;
         padding: 10px 0 6px 0;
     }
+
 }
